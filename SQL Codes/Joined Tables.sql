@@ -37,7 +37,7 @@ SELECT
     END AS Account_Status,
 
     -- VIEWERSHIP DETAILS
-    -- In the 
+    -- In this database we are going to use to see the trends of the viewers and what they wtach the most and and who watches what at what time
     b.Channel2,
     CASE
         WHEN b.Channel2 IN ('CNN', 'BBC', 'Sky News', 'eNCA') THEN 'News'

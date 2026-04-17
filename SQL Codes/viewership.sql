@@ -1,5 +1,4 @@
 -- Databricks notebook source
-
 --This is to see annalyse my data, to verify that the data imported is correct and accuarate 
 SELECT*
 FROM workspace.default.viewership;
@@ -57,7 +56,7 @@ FROM viewership;
 --------
 CREATE OR REPLACE VIEW viewership_for_dashboard AS
 SELECT 
-    *,  -- This keeps all your original columns exactly as they are
+    *,  
     
     -- 1. Create a "Looker-friendly" Date column
     CAST(RecordDate2 AS TIMESTAMP) AS ViewDate_Clean,
@@ -67,7 +66,7 @@ SELECT
     (CAST(split(Duration2, ':')[1] AS INT) * 60) + 
     CAST(split(Duration2, ':')[2] AS INT) AS Duration_Seconds,
     
-    -- 3. The '3-Thing' Comparison Logic
+    -- 3.  Comparison Logic for better understanding 
     CASE 
         WHEN Channel2 IN ('Supersport Live Events', 'ICC Cricket World Cup 2011', 'Channel O') THEN 'Top 3 Channels'
         ELSE 'Other Channels'
