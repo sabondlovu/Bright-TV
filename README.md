@@ -19,7 +19,7 @@ In preparation for my report, I did the following
   Once this was done l then came up with my SQL code to combine the two tables
 
   I used a Full Join to combine the two tables, with a common column, which is UserID
-  -Once the tables were combined, my detailed analysis therefore started, having  abetter undertsanding of the BrightLearn Viewership.
+  -Once the tables were combined, my detailed analysis therefore started, having  a better understanding of the BrightLearn Viewership.
   
 Main Viewership Trends 
 -Most of the viewers are Young Adults between 18 and 34, and they are located in Gauteng. They have the highest segments 
@@ -28,5 +28,5 @@ Main Viewership Trends
 - Great viewership is at night, which is mainly consumed by Adults, while the kids' content is stable in the morning to afternoon.
 
 - Recommendations
-- We can use our weekend sports and music into Monday must watch content and using Gauteng base to drive referrals
+- We can use our weekend sports and music as Monday must-watch content and use the Gauteng base to drive referrals
 - Use some viewers as word of mouth, make viewers talk about sports that are coming on a Monday. People trust people who are like them.
