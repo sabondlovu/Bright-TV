@@ -19,6 +19,7 @@ SELECT
         ELSE 'Senior'
     END AS Age_Group,
     CASE
+    ---This is for catergorising the age, this is how it will show on my final data that l will be analysisng 
         WHEN a.Age < 18 THEN 'Under 18'
         WHEN a.Age BETWEEN 18 AND 24 THEN '18–24'
         WHEN a.Age BETWEEN 25 AND 34 THEN '25–34'
@@ -47,7 +48,7 @@ SELECT
         WHEN b.Channel2 IN ('HBO', 'Netflix', 'M-Net', 'Showmax', 'Africa Magic', 'Vuzu', 'E! Entertainment', 'KykNet') THEN 'Entertainment'
         ELSE 'Other'
     END AS Channel_Category,
-
+--This is te tine that has been used to convert the timestamp to be SAST as per instrusctions 
     b.RecordDate2,
     DATE_FORMAT(from_utc_timestamp(to_timestamp(b.RecordDate2, 'yyyy/MM/dd HH:mm'), 'Africa/Johannesburg'), 'yyyy-MM-dd') AS Record_Date,
     DATE_FORMAT(from_utc_timestamp(to_timestamp(b.RecordDate2, 'yyyy/MM/dd HH:mm'), 'Africa/Johannesburg'), 'MMMM') AS Month_Name,
